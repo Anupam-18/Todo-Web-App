@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+font-size: 67.5%;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+ .active{
+    filter: blur(1.5rem);
+    pointer-events: none;
+    user-select: none;
+}
+.container header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+header .leftHead{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+header .leftHead span{
+    font-weight: 300;
+}
+header .rightHead{
+    font-size: 3.5rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+.emptyList{
+    font-size: 3.5rem;
+    font-weight: lighter;
+    padding: 2rem 0rem 0rem 21rem;
+}
+.itemList{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.popUpItem, .popUpItemList{
+    width : 27rem; 
+    margin: auto;
+    position: fixed;
+    top:30%;
+    left: 35%;
+}
+.card{
+    border: 1px solid #e74c3c;
+    border-radius: 1rem;
+    width: 35rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    z-index: 1000;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 10px #00000029;
+}
+.card h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #e74c3c;
+}
+.card input{
+    border: 1px solid #e74c3c;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.card .buttons{
+    display: flex;
+}
+.card .buttons a{
+    width: 10rem;
+    height: 4.3rem;
+    background: #e74c3c;
+    border-radius: 2rem;
+    opacity: 1;
+    border: none;
+    font-size: 2.5rem;
+    color:#ffffff;
+    margin: 1rem;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 0.6rem;
+}
+
+.listItem{
+    border: 1px solid #e74c3c;
+    border-radius: 1rem;
+    min-width: 20rem;
+    min-height: 30rem;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 10px #00000029;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.listItem header{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #e74c3c;
+    text-align: center;
+    width:100%;
+    border-bottom: 0.1rem solid #000000;
+}
+ #listContent{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+.listItem .fas {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    color: #4b8ce8;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.listItem .far {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    padding:0.5rem;
+    color:#ffffff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+.listItem #listContent .eachItem{
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+.afterMark{
+    text-decoration: line-through;
+    color: red  ! important;
+}
+.listItem .eachItem a{
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color:#4b8ce8;
+    color:#ffffff;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}

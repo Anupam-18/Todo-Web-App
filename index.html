@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Todo</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="leftHead">
+                Tasks <span>List</span>
+            </span>
+            <span class="rightHead"><i class="fas fa-plus-circle" style="color: #4b8ce8;;"></i> Add Item</span>
+        </header>
+        <div class="emptyList">
+            No Items in the todo list
+        </div>
+        <div class="itemList">
+
+        </div>
+    </div>
+    <div class="popUpItem">
+        <div class="card">
+            <h4>Add New List</h4>
+            <input type="text" id="listVal" placeholder="Add New List" name="listVal">
+            <div class="buttons">
+                <a id="addBtn">Add</a>
+                <a id="closeBtn">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="popUpItemList">
+        <div class="card">
+            <h4>Add New Item</h4>
+            <input type="text" id="itemVal" placeholder="Add New Item" name="listVal">
+            <div class="buttons">
+                <a id="addItem">Add</a>
+                <a id="closeItem">Close</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
